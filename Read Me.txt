@@ -1,0 +1,38 @@
+Ans of question 1:
+getElementById gives a single element.
+getElementByClassName gives a HTMLCollection. (This is live, meaning it will update automatically)
+querySelector gives a single element.
+querySelectorAll gives back a NodeList.( it is static)
+
+Ans of question 2:
+
+
+const newDiv = document.createElement('div');
+
+newDiv.textContent = "Hello World!"; 
+
+parentElement.appendChild(newDiv); //Adds it as the last child.//
+
+Ans of question 3:
+
+When an event happens on an element (clicking on a button), it doesn't just stay there. It moves through the DOM in three phases:
+
+1.The event goes down from the window to the target.
+
+2. The event reaches the element you clicked.
+
+3. The event "bubbles" back up from the target to the window.
+
+Ans of question 4:
+
+Event Delegation is an approach where we can take advantage of Event Bubbling. Instead of adding an event listener to every single button in a list, we can add one listener to their common parent.
+
+benefits:
+memory efficiency
+dynamic element.(adding something new doesn't require adding listener)
+
+Ans of question 5:
+
+preventDefault() is used to stop the browser's default behavior for that event.
+
+stopPropagation() is used to stop the event from traveling further in the DOM tree.
