@@ -736,7 +736,7 @@
             }
         });
 
-        // Update the Header Stats
+
         document.getElementById('totalCount').innerText = totalCount;
         document.getElementById('interviewCount').innerText = interviewCount;
         document.getElementById('rejectedCount').innerText = rejectedCount;
@@ -790,7 +790,6 @@
         jobsCountEl.innerText = visibleInTab + ' of ' + totalNonHidden + ' Jobs';
         }
 
-        // Handle Empty State based on visibility in the current tab
         const emptyState = document.getElementById('emptyState');
         if (visibleInTab === 0) {
             emptyState.classList.remove('hidden');
